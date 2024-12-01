@@ -1,0 +1,9 @@
+{
+	"name": "adf-az-data-engineer",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3c298023-b3bb-45a6-8436-32407430ab19",
+		"tenantId": "6850d3d9-5ab9-478c-85a0-f0a17cdb8bf9"
+	}
+}
