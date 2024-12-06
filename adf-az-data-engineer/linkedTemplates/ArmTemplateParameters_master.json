@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-az-data-engineer"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"creditcard_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://analysysacc.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "SATHAYASRI"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "AdventureWorks2017"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sri"
+		},
+		"creditcard_properties_typeProperties_url": {
+			"value": "https://analysysacc.dfs.core.windows.net/"
+		},
+		"keyvault_properties_typeProperties_baseUrl": {
+			"value": "https://kv-az-data-engineer.vault.azure.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1201-154125-3iqvtu74"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
