@@ -14,6 +14,9 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://analysysacc.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1201-154125-3iqvtu74"
+		},
 		"SqlServer1_properties_typeProperties_server": {
 			"value": "SATHAYASRI"
 		},
@@ -28,9 +31,6 @@
 		},
 		"keyvault_properties_typeProperties_baseUrl": {
 			"value": "https://kv-az-data-engineer.vault.azure.net/"
-		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"value": "1201-154125-3iqvtu74"
 		},
 		"containerUri": {
 			"value": ""
