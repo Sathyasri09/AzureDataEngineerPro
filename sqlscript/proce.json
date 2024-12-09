@@ -1,0 +1,17 @@
+{
+	"name": "proce",
+	"properties": {
+		"content": {
+			"query": "USE gold_transfer;\nGO\n\nCREATE OR ALTER PROC CREATESQLSERVERLESSVIEW_DEMO\n    @VIEWNAME NVARCHAR(100)\nAS\nBEGIN\n    DECLARE @statement NVARCHAR(MAX);\n\n    SET @statement = N'CREATE OR ALTER VIEW ' + QUOTENAME(@VIEWNAME) + N' AS\n    SELECT *\n    FROM OPENROWSET(\n        BULK ''https://analysysacc.dfs.core.windows.net/gold/Sales/' + @VIEWNAME + N'/'' ,\n        FORMAT = ''DELTA''\n    ) AS [result];';\n\n    EXEC sp_executesql @statement;\nEND;\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "gold_transfer",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
